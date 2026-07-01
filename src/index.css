@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --tea-green: #6B8E5A;
+  --tea-green-light: #8CB37A;
+  --tea-green-dark: #4A6B3C;
+  --amber: #C87A2C;
+  --amber-light: #E89B4A;
+  --cream: #F5F0E8;
+  --cream-dark: #E8E0D5;
+  --ink: #2C2C2C;
+  --ink-light: #4A4A4A;
+  --ink-muted: #88807C;
+  --bamboo: #7A9B5E;
+  --cinnabar: #C23B22;
+  --indigo: #4A6FA5;
+  --gold: #D4A840;
+
+  --bg-primary: var(--cream);
+  --bg-card: rgba(245, 240, 232, 0.95);
+  --bg-modal: rgba(44, 44, 44, 0.6);
+  --text-primary: var(--ink);
+  --text-secondary: var(--ink-light);
+  --text-muted: var(--ink-muted);
+  --accent: var(--tea-green);
+  --accent-hover: var(--tea-green-light);
+  --accent-dark: var(--tea-green-dark);
+  --warm-accent: var(--amber);
+  --border-color: var(--cream-dark);
+  --shadow: 0 2px 12px rgba(44, 44, 44, 0.08);
+  --shadow-lg: 0 8px 32px rgba(44, 44, 44, 0.15);
+
+  --font-display: "Noto Serif SC", "STSong", "SimSun", serif;
+  --font-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse at 10% 20%, rgba(107, 142, 90, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 80%, rgba(200, 122, 44, 0.05) 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(200, 122, 44, 0.02) 40px,
+      rgba(200, 122, 44, 0.02) 41px
+    );
+}
+
+#root {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--bg-primary);
+  box-shadow: 0 0 40px rgba(44, 44, 44, 0.06);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
