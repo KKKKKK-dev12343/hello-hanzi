@@ -1,0 +1,12 @@
+ {
+   "name": "汉字说 · Hello Hanzi",
+   "short_name": "汉字说",
+   "description": "甲骨文汉字学习APP — 让汉字说话",
+   "start_url": "/",
+   "display": "standalone",
+   "background_color": "#F5F0E8",
+   "theme_color": "#6B8E5A",
+   "icons": [
+     { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+   ]
+ }
